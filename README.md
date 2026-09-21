@@ -3,8 +3,8 @@
 FullRead is a standalone GenLayer Intelligent Contract that reviews entire public documents against structured checklists and proves full coverage.
 
 Deployed to **GenLayer studionet**:
-- **Contract Address**: `0x86579015A531C3CB76879213244BcE355Ad4EA8C`
-- **Explorer Link**: [View on GenLayer Explorer](https://genlayer-explorer.vercel.app/address/0x86579015A531C3CB76879213244BcE355Ad4EA8C)
+- **Contract Address**: `0xfC2d4d29b46f44A6f4d09496451ff662dA8b4d33`
+- **Explorer Link**: [View on GenLayer Explorer](https://explorer-studio.genlayer.com/address/0xfC2d4d29b46f44A6f4d09496451ff662dA8b4d33)
 - **Chain ID**: `61999`
 - **GenVM Runner**: `v0.2.16-x86_64-linux-release`
 

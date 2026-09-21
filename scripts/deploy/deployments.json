@@ -2,15 +2,134 @@
   "network": "studionet",
   "chainId": 61999,
   "rpcUrl": "https://studio.genlayer.com/api",
-  "explorer": "https://genlayer-explorer.vercel.app",
-  "contractAddress": "0x86579015A531C3CB76879213244BcE355Ad4EA8C",
-  "deployTx": "0x9352fcce7dc65da4f6b9e4a76d64c17e153596742bc885a271844fba6bfe0668",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "explorerContractUrl": "https://explorer-studio.genlayer.com/address/0xfC2d4d29b46f44A6f4d09496451ff662dA8b4d33",
+  "contractAddress": "0xfC2d4d29b46f44A6f4d09496451ff662dA8b4d33",
+  "deployTx": "0x78d9b6be8e9bf32bc6cec8ecb9252268ee420f4bb2bba545cfaa7f45db2801d8",
+  "explorerDeployTxUrl": "https://explorer-studio.genlayer.com/tx/0x78d9b6be8e9bf32bc6cec8ecb9252268ee420f4bb2bba545cfaa7f45db2801d8",
+  "commitSha": "1089f03d16472bf324510b52b3f73715d310ad7f",
+  "githubRepo": "https://github.com/huzyow155/fullread-genlayer",
   "checklistId": "60932b48524e8f2a",
-  "registerTx": "0x17f2e8e28f136737ca5b30cc57b00af23b18230de55030b5ecad80e3c8c089f0",
-  "m1TestReviewTx": "0xfc4c75b5e0df91168d3906494f7eda3edf83695896304017943bb8e45848baa6",
-  "m1Status": "ACCEPTED",
-  "m1Result": "MAJORITY_AGREE",
-  "m1ReviewLatencySec": "18.98",
-  "consumerContractAddress": "0x3C0f216B8df54c48d6a95F898c35482E7BA5370d",
-  "consumerDeployTx": "0xb1e5ef320972e55aaf531713ee786b19de9fd81443c1c6fce4636241ebeb37e9"
+  "registerTx": "0xca3034fa752650a8035d13e85f919009ecc47b464b11eb4a5fe0fcc483ff1b1f",
+  "consumerContractAddress": "0xE8424C568FCB418fBAD5D272470f9A9fD6452860",
+  "explorerConsumerContractUrl": "https://explorer-studio.genlayer.com/address/0xE8424C568FCB418fBAD5D272470f9A9fD6452860",
+  "consumerDeployTx": "0x89ce9521ba7108bcaddd8ebfc47c153a87be211b57e06ec553328bac53008e82",
+  "crossContractApprovalTx": "0x3a3955069980a2cb56da8a874ae6ec1d5c2788a2b61429a2b6d87a5008fffb4a",
+  "crossContractApproved": true,
+  "reviews": [
+    {
+      "title": "Run 1 - Compliant Document",
+      "fixture": "compliant.md",
+      "docUrl": "https://raw.githubusercontent.com/huzyow155/fullread-genlayer/1089f03d16472bf324510b52b3f73715d310ad7f/tests/fixtures/compliant.md",
+      "txHash": "0x07111f986baa69c2df180f454e0c3fa95d7c239f8ff325aff7b59cd336c9a2cc",
+      "latencySec": "106.44",
+      "status": "ACCEPTED",
+      "result": "MAJORITY_AGREE",
+      "executionResult": "ACCEPTED",
+      "reviewId": "60932b48_34af5201_r1",
+      "record": {
+        "checklist_id": "60932b48524e8f2a",
+        "chunk_hashes": [
+          "03a353f93d55201ccdf32ba31763cce3b69c2cdb7b5ef238a739dedf86902ea4",
+          "0620f7914d211112b7ecc693e07d5f66a7ae40a37e89a5147d232436219e1ff1",
+          "1e2f6c0d988e2af9053988485ca1d0f6ee1ddc186ea3aae7da5bbef8b140332d"
+        ],
+        "coverage_bp": 10000,
+        "doc_sha256": "07319db20d11e985b14175a711e9a0f88bf1e7758f24aaabf21ff807c5f497a8",
+        "doc_url": "https://raw.githubusercontent.com/huzyow155/fullread-genlayer/1089f03d16472bf324510b52b3f73715d310ad7f/tests/fixtures/compliant.md",
+        "drifted": false,
+        "max_chunks": 3,
+        "outcome": "PASS",
+        "previous_review_id": "",
+        "quotes": {
+          "auto_renew": "",
+          "refund": "We provide a clear mandatory 30-day refund policy for all purchases. Any customer dissatisfied with the platform within the initial thirty days of service provision may request a full reimbursement"
+        },
+        "review_id": "60932b48_34af5201_r1",
+        "revision": 1,
+        "schema_version": "1.0.0",
+        "status_by_item": {
+          "auto_renew": "CLEAR",
+          "refund": "SATISFIED"
+        },
+        "ungrounded_count": 0
+      }
+    },
+    {
+      "title": "Run 2 - Violation in First Chunk",
+      "fixture": "violation_in_first_chunk.md",
+      "docUrl": "https://raw.githubusercontent.com/huzyow155/fullread-genlayer/1089f03d16472bf324510b52b3f73715d310ad7f/tests/fixtures/violation_in_first_chunk.md",
+      "txHash": "0xe811755132eee419fd92abd835b6e77fd14847869840a1cac974e208fd82d70b",
+      "latencySec": "52.30",
+      "status": "ACCEPTED",
+      "result": "MAJORITY_AGREE",
+      "executionResult": "ACCEPTED",
+      "reviewId": "60932b48_d101aeae_r1",
+      "record": {
+        "checklist_id": "60932b48524e8f2a",
+        "chunk_hashes": [
+          "7cb1498aa161fca1a1888c0411fecd392bc79f5acf3b556b89dc1a3c84696935",
+          "e2de6a3904fab74ef400de00e559eb8637dcb00870417497daa809d5d9290546",
+          "8dc058c558d4cbf7721b292aff6ce6c9e34d31dbfbe760b1fef1fb5e8b986c9b"
+        ],
+        "coverage_bp": 10000,
+        "doc_sha256": "7da063f93517f308ff9367647f1f95c38b048a55301690df21f5cd51f723984a",
+        "doc_url": "https://raw.githubusercontent.com/huzyow155/fullread-genlayer/1089f03d16472bf324510b52b3f73715d310ad7f/tests/fixtures/violation_in_first_chunk.md",
+        "drifted": false,
+        "max_chunks": 3,
+        "outcome": "FAIL",
+        "previous_review_id": "",
+        "quotes": {
+          "auto_renew": "All subscriptions will auto-renew without notice at the end of each billing cycle, charging the designated credit card automatically for successive multi-year enterprise license commitments.",
+          "refund": ""
+        },
+        "review_id": "60932b48_d101aeae_r1",
+        "revision": 1,
+        "schema_version": "1.0.0",
+        "status_by_item": {
+          "auto_renew": "VIOLATED",
+          "refund": "UNRESOLVED"
+        },
+        "ungrounded_count": 1
+      }
+    },
+    {
+      "title": "Run 3 - Buried Violation in Last Chunk",
+      "fixture": "violation_in_last_chunk.md",
+      "docUrl": "https://raw.githubusercontent.com/huzyow155/fullread-genlayer/1089f03d16472bf324510b52b3f73715d310ad7f/tests/fixtures/violation_in_last_chunk.md",
+      "txHash": "0xb39d24b377990cb335e46019eccb46f38faff55cb617755a142150c92308e212",
+      "latencySec": "29.12",
+      "status": "ACCEPTED",
+      "result": "MAJORITY_AGREE",
+      "executionResult": "ACCEPTED",
+      "reviewId": "60932b48_abac5b2d_r1",
+      "record": {
+        "checklist_id": "60932b48524e8f2a",
+        "chunk_hashes": [
+          "7c3d50ba50b351ec27ecbffe3cc259ce0aabf971a9a9dc40f1864cadfe933620",
+          "f380fdb1f977b60f90c0f94acf9077bea074cdb47b8fb3857260de5a0f6d3800",
+          "6cfcd466dc5072796d07b07ab1383c407279e4de9580f14af7387b929eae6f64"
+        ],
+        "coverage_bp": 10000,
+        "doc_sha256": "1d7f319ce4862ec2d2c57f8ff26558509970b4d19ff449c759fa373283c39d40",
+        "doc_url": "https://raw.githubusercontent.com/huzyow155/fullread-genlayer/1089f03d16472bf324510b52b3f73715d310ad7f/tests/fixtures/violation_in_last_chunk.md",
+        "drifted": false,
+        "max_chunks": 3,
+        "outcome": "FAIL",
+        "previous_review_id": "",
+        "quotes": {
+          "auto_renew": "All subscriptions will auto-renew without notice at the end of each billing cycle, charging recurring annual fees to the registered payment method in perpetuity.",
+          "refund": "We provide a clear mandatory 30-day refund policy for all purchases. Any customer dissatisfied with the platform within the initial thirty days of service provision may request a full reimbursement th"
+        },
+        "review_id": "60932b48_abac5b2d_r1",
+        "revision": 1,
+        "schema_version": "1.0.0",
+        "status_by_item": {
+          "auto_renew": "VIOLATED",
+          "refund": "SATISFIED"
+        },
+        "ungrounded_count": 0
+      }
+    }
+  ]
 }

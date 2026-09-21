@@ -4,7 +4,7 @@
 - **Network Name**: GenLayer Studio Network (`studionet`)
 - **Chain ID**: `61999`
 - **RPC URL**: `https://studio.genlayer.com/api`
-- **Explorer URL**: `https://genlayer-explorer.vercel.app`
+- **Explorer URL**: `https://explorer-studio.genlayer.com`
 - **SDK Version**: `genlayer-js@1.1.8`
 - **Chain Object**: `import { studionet } from 'genlayer-js/chains'`
 
