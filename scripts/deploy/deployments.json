@@ -10,5 +10,7 @@
   "m1TestReviewTx": "0xfc4c75b5e0df91168d3906494f7eda3edf83695896304017943bb8e45848baa6",
   "m1Status": "ACCEPTED",
   "m1Result": "MAJORITY_AGREE",
-  "m1ReviewLatencySec": "18.98"
+  "m1ReviewLatencySec": "18.98",
+  "consumerContractAddress": "0x3C0f216B8df54c48d6a95F898c35482E7BA5370d",
+  "consumerDeployTx": "0xb1e5ef320972e55aaf531713ee786b19de9fd81443c1c6fce4636241ebeb37e9"
 }
