@@ -1,0 +1,14 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "rpcUrl": "https://studio.genlayer.com/api",
+  "explorer": "https://genlayer-explorer.vercel.app",
+  "contractAddress": "0x86579015A531C3CB76879213244BcE355Ad4EA8C",
+  "deployTx": "0x9352fcce7dc65da4f6b9e4a76d64c17e153596742bc885a271844fba6bfe0668",
+  "checklistId": "60932b48524e8f2a",
+  "registerTx": "0x17f2e8e28f136737ca5b30cc57b00af23b18230de55030b5ecad80e3c8c089f0",
+  "m1TestReviewTx": "0xfc4c75b5e0df91168d3906494f7eda3edf83695896304017943bb8e45848baa6",
+  "m1Status": "ACCEPTED",
+  "m1Result": "MAJORITY_AGREE",
+  "m1ReviewLatencySec": "18.98"
+}
