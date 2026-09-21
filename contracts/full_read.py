@@ -144,8 +144,18 @@ def _reduce(items: list, chunk_results: list, full: bool):
 
 
 def _same_decision(a: dict, b: dict) -> bool:
-    keys = ("outcome", "coverage_bp", "doc_sha256", "chunk_hashes", "status_by_item")
-    return all(a.get(k) == b.get(k) for k in keys)
+    keys = ("outcome", "coverage_bp", "doc_sha256", "chunk_hashes")
+    if not all(a.get(k) == b.get(k) for k in keys):
+        return False
+    a_status = a.get("status_by_item", {})
+    b_status = b.get("status_by_item", {})
+    if a.get("outcome") == "PASS":
+        return a_status == b_status
+    if a.get("outcome") == "FAIL":
+        a_bad = [k for k, v in a_status.items() if v in ("VIOLATED", "MISSING")]
+        b_bad = [k for k, v in b_status.items() if v in ("VIOLATED", "MISSING")]
+        return set(a_bad) == set(b_bad)
+    return a_status == b_status
 
 
 def _run_custom_consensus(leader_fn, validator_fn):

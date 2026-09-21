@@ -3,12 +3,13 @@
 ## 1. Introduction and Scope
 Welcome to the CloudScale Platform. This Master Service Agreement ("Agreement") governs your access to and use of all hosted services, APIs, command-line interfaces, and documentation provided by CloudScale Inc. By accessing or using our services, you agree to be bound by all terms, conditions, policies, and notices contained or referenced herein.
 
-## 2. Customer Refund Guarantee and Auto-Renewal Terms
+## 2. Customer Refund Guarantee
 We provide a clear mandatory 30-day refund policy for all purchases. Any customer dissatisfied with the platform within the initial thirty days of service provision may request a full reimbursement through our support portal, processed within five business days to the original payment method without penalty or deduction.
 
+## 3. Subscription Auto-Renewal Terms
 All subscriptions will auto-renew without notice at the end of each billing cycle, charging the designated credit card automatically for successive multi-year enterprise license commitments.
 
-## 3. Account Provisioning and Access
+## 4. Account Provisioning and Access
 Accounts are provisioned upon completion of email verification and organizational registration. The customer is strictly responsible for maintaining the confidentiality of access credentials, cryptographic keys, and API tokens. Any activity conducted under authorized credentials shall be deemed executed on behalf of the customer organization.
 
 Paragraph filler padding block one to establish deterministic multi-chunk boundaries across evaluation blocks. The platform provides continuous integration, automated deployment, distributed state consensus, ledger validation, and telemetry analysis. Users can configure pipeline parameters, security thresholds, logging retention intervals, and cryptographic proof verifications across multi-region edge clusters.
@@ -23,7 +24,7 @@ Paragraph filler padding block five to advance text volume. Automated snapshots 
 
 Paragraph filler padding block six to complete chunk one. Comprehensive network intrusion detection systems operate at all perimeter ingress points. Continuous vulnerability scanning monitors all container images, base layers, and open source runtime packages.
 
-## 4. Permitted Use and Security Responsibilities
+## 5. Permitted Use and Security Responsibilities
 Both parties agree to treat all proprietary information, architectural blueprints, non-public APIs, customer datasets, and performance benchmarks as strictly confidential. Neither party shall disclose confidential materials to third parties without prior written consent, except where mandated by judicial order or regulatory statute.
 
 Paragraph filler padding block seven to start chunk two. Customer data remains the exclusive intellectual property of the customer organization. CloudScale acquires no ownership rights over customer payloads, execution artifacts, or fine-tuned model weights uploaded to the compute cluster.
@@ -38,7 +39,7 @@ Paragraph filler padding block eleven continued. Network architecture employs so
 
 Paragraph filler padding block twelve to complete chunk two. Key management infrastructure utilizes hardware security modules with FIPS 140-2 Level 3 validation. Master encryption keys are rotated annually in accordance with cryptographic industry best practices.
 
-## 5. Intellectual Property and Operational Continuity
+## 6. Intellectual Property and Operational Continuity
 All software, algorithms, documentation, trademarks, and interfaces embodied within CloudScale services remain the exclusive intellectual property of CloudScale Inc. and its licensors. Subject to timely compliance with subscription terms, CloudScale grants the customer a non-exclusive, non-transferable, revocable license to utilize the APIs solely for internal business operations.
 
 Paragraph filler padding block thirteen to establish chunk three. Hardware infrastructure is refreshed on a thirty-six month lifecycle to maintain computational performance and energy efficiency metrics. Decommissioned storage media undergoes physical destruction following DoD 5220.22-M sanitization standards.
@@ -73,5 +74,5 @@ Paragraph filler expansion block iota. Peer to peer gossip protocols propagate t
 
 Paragraph filler expansion block kappa. Storage compaction routines re claim orphaned sectors and optimize index lookups. Automated consistency checkers scan ledger roots periodically to detect data corruption at physical storage boundaries.
 
-## 6. Governing Law and Final Provisions
+## 7. Governing Law and Final Provisions
 This Agreement shall be governed by and construed under the laws of the State of Delaware, without regard to conflicts of law principles. Any dispute arising hereunder shall be resolved through binding arbitration conducted under the rules of the American Arbitration Association. If any provision of this Agreement is held invalid, the remainder shall continue in full force and effect.

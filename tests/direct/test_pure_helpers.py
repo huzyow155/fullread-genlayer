@@ -102,8 +102,18 @@ def _reduce(items, chunk_results, full):
     return outcome, status, quotes
 
 def _same_decision(a, b):
-    keys = ("outcome", "coverage_bp", "doc_sha256", "chunk_hashes", "status_by_item")
-    return all(a.get(k) == b.get(k) for k in keys)
+    keys = ("outcome", "coverage_bp", "doc_sha256", "chunk_hashes")
+    if not all(a.get(k) == b.get(k) for k in keys):
+        return False
+    a_status = a.get("status_by_item", {})
+    b_status = b.get("status_by_item", {})
+    if a.get("outcome") == "PASS":
+        return a_status == b_status
+    if a.get("outcome") == "FAIL":
+        a_bad = [k for k, v in a_status.items() if v in ("VIOLATED", "MISSING")]
+        b_bad = [k for k, v in b_status.items() if v in ("VIOLATED", "MISSING")]
+        return set(a_bad) == set(b_bad)
+    return a_status == b_status
 
 def _strip_tags(html_text):
     out = []
@@ -258,6 +268,33 @@ class TestPureHelpers(unittest.TestCase):
         # Different doc hash must fail
         dec4 = dict(dec1, doc_sha256="xyz789")
         self.assertFalse(_same_decision(dec1, dec4))
+
+        # FAIL consensus: both agree on failing item 'auto_renew'
+        fail1 = {
+            "outcome": "FAIL",
+            "coverage_bp": 10000,
+            "doc_sha256": "abc123",
+            "chunk_hashes": ["c1", "c2"],
+            "status_by_item": {"auto_renew": "VIOLATED", "refund": "UNRESOLVED"},
+        }
+        fail2 = {
+            "outcome": "FAIL",
+            "coverage_bp": 10000,
+            "doc_sha256": "abc123",
+            "chunk_hashes": ["c1", "c2"],
+            "status_by_item": {"auto_renew": "VIOLATED", "refund": "SATISFIED"},
+        }
+        self.assertTrue(_same_decision(fail1, fail2))
+
+        # FAIL consensus: different failing items must disagree
+        fail3 = {
+            "outcome": "FAIL",
+            "coverage_bp": 10000,
+            "doc_sha256": "abc123",
+            "chunk_hashes": ["c1", "c2"],
+            "status_by_item": {"auto_renew": "CLEAR", "refund": "MISSING"},
+        }
+        self.assertFalse(_same_decision(fail1, fail3))
 
 
 if __name__ == "__main__":
