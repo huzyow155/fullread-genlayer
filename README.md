@@ -101,8 +101,13 @@ class DocumentPolicyConsumer(gl.Contract):
 
 ---
 
+## Prior Art & Novelty
+We searched ecosystem contracts and documentation for prior implementations of chunked document reviews and quote grounding on GenLayer. We found no contract that combines deterministic whole-document chunking, basis-point coverage enforcement, code-verified quote grounding, and code-derived verdict synthesis on GenLayer studionet.
+
+---
+
 ## Known Limitations
 1. **Document Length**: Documents exceeding 40,000 characters or 4 chunks cannot achieve `PASS` (capped at `REVIEW` with partial coverage basis points).
 2. **Dynamic Rendering**: Dynamic client-rendered JavaScript pages are out of scope (requires plain text, markdown, or static HTML).
 3. **External Translation**: Non-English documents must be evaluated with checklist questions in the source language.
-4. **Latency**: Each chunk requires an LLM call across validators; 1-chunk reviews complete in ~19 seconds, 3-chunk reviews take ~45-60 seconds.
+4. **Latency**: Each chunk requires an LLM call across validators; 1-chunk reviews complete in ~19 seconds, 3-chunk reviews take ~45-60 seconds on studionet.
