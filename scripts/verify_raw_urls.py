@@ -2,7 +2,7 @@ import urllib.request
 import hashlib
 import sys
 
-COMMIT_SHA = "2300c1f7c24c9eb3c3b09513b2550ec38aa5e730"
+COMMIT_SHA = "1089f03d16472bf324510b52b3f73715d310ad7f"
 BASE_URL = f"https://raw.githubusercontent.com/huzyow155/fullread-genlayer/{COMMIT_SHA}/tests/fixtures/"
 
 files = [

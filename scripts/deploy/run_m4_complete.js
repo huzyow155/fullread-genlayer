@@ -1,7 +1,7 @@
 const { createClient, chains, createAccount } = require('genlayer-js');
 const fs = require('fs');
 
-const COMMIT_SHA = "2300c1f7c24c9eb3c3b09513b2550ec38aa5e730";
+const COMMIT_SHA = "1089f03d16472bf324510b52b3f73715d310ad7f";
 const BASE_URL = `https://raw.githubusercontent.com/huzyow155/fullread-genlayer/${COMMIT_SHA}/tests/fixtures/`;
 
 async function main() {
