@@ -58,7 +58,7 @@ def _flat(s: str) -> str:
 
 
 def _grounded(quote: str, chunk: str) -> bool:
-    q = _flat(quote)
+    q = _flat(quote).strip("\"' .")
     return len(q) >= 12 and q in _flat(chunk)
 
 
@@ -235,7 +235,7 @@ Required JSON shape:
   "results": {{
     "<item_id>": {{
       "status": "PRESENT" | "ABSENT" | "UNCLEAR",
-      "quote": "<verbatim text, max 160 chars, or empty>"
+      "quote": "<verbatim text from chunk, max 160 chars, without outer quotation marks, or empty string>"
     }}
   }}
 }}

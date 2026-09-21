@@ -44,7 +44,7 @@ def _flat(s):
     return " ".join(str(s).split()).lower()
 
 def _grounded(quote, chunk):
-    q = _flat(quote)
+    q = _flat(quote).strip("\"' .")
     return len(q) >= 12 and q in _flat(chunk)
 
 def _parse(raw):
