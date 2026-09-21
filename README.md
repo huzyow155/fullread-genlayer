@@ -1,5 +1,7 @@
 # FullRead: Whole-Document Legal & Compliance Intelligent Contract
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 FullRead is a standalone GenLayer Intelligent Contract that reviews entire public documents against structured checklists and proves full coverage.
 
 Deployed to **GenLayer studionet**:
@@ -111,3 +113,9 @@ We searched ecosystem contracts and documentation for prior implementations of c
 2. **Dynamic Rendering**: Dynamic client-rendered JavaScript pages are out of scope (requires plain text, markdown, or static HTML).
 3. **External Translation**: Non-English documents must be evaluated with checklist questions in the source language.
 4. **Latency**: Each chunk requires an LLM call across validators; 1-chunk reviews complete in ~19 seconds, 3-chunk reviews take ~45-60 seconds on studionet.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
